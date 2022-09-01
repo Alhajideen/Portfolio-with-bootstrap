@@ -13,23 +13,26 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <nav class="navbar navbar-dark text-white bg-secondary">
+    <nav
+      class="navbar navbar-dark text-white bg-secondary fixed-top"
+      id="navbar"
+    >
       <div class="container-lg">
         <div class="nav-logo align-center">
           <a class="navbar-brand" href="#">John Doe </a>
         </div>
         <div class="nav-links align-center">
-          <ul class="d-flex align-center mt-3">
-            <li class="nav-item list-group-item mx-3 d-flex">
-              <a class="nav-link bg-text" aria-current="page" href="#"
+          <ul class="d-flex align-center nav nav-pills ">
+            <li class="nav-item list-group-item mx-3 d-flex text-white">
+              <a class="nav-link text-white" aria-current="page" href="#portfolio"
                 >Portfolio</a
               >
             </li>
             <li class="nav-item list-group-item mx-3">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link text-white" href="#about">About</a>
             </li>
             <li class="nav-item list-group-item mx-3">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link text-white" href="#contact">Contact</a>
             </li>
             <li class="nav-item list-group-item mx-3">
               <svg
@@ -49,8 +52,14 @@
         </div>
       </div>
     </nav>
-    <main>
-      <section class="hero">
+    <main
+      data-bs-spy="scroll"
+      data-bs-target="#navbar"
+      data-bs-offset="0"
+      class="scrollspy-example"
+      tabindex="0"
+    >
+      <section class="hero" id="portfolio">
         <div class="container-fluid bg-dark">
           <div class="row align-items-center">
             <div class="col-2">
