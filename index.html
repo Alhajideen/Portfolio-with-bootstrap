@@ -22,7 +22,7 @@
           <a class="navbar-brand" href="#">John Doe </a>
         </div>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler me-2"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -133,7 +133,7 @@
       <section class="container-lg my-5">
         <div class="row align-items-center my-5">
           <div class="col-12 col-md-3">
-            <h2>My Recent Work</h2>
+            <h2 class="text-center text-md-start">My Recent Work</h2>
           </div>
           <div class="col-12 col-md-9">
             <img class="img-fluid" src="./img/Vector.png" alt="" />
@@ -315,7 +315,7 @@
       <section id="about">
         <div class="container-fluid bg-dark pb-5">
           <div class="row align-items-center">
-            <div class="col p-5 mx-5">
+            <div class="col-12 col-md p-md-5 mx-md-5 pt-5 px-2">
               <h2 class="display-5 text-warning">About me</h2>
               <p class="fs-4 text-white">
                 Hello I'm a software developer! I can help you build a product ,
@@ -327,7 +327,7 @@
                 Get my resume
               </button>
             </div>
-            <div class="col">
+            <div class="col d-none d-md-block">
               <img
                 class="img-fluid"
                 src="./img/about-img.png"
@@ -336,8 +336,8 @@
             </div>
           </div>
           <hr class="border border-1 text-secondary mx-5 my-5" />
-          <div class="row">
-            <div class="col ps-5">
+          <div class="row text-center text-md-start">
+            <div class="col-md col-12 ps-md-5 mb-5">
               <ul class="text-white">
                 <li class="h2 list-group-item">
                   <img
@@ -353,7 +353,7 @@
                 <li class="list-group-item fs-4 ms-2 my-3">Css</li>
               </ul>
             </div>
-            <div class="col">
+            <div class="col-md col-12 mb-5">
               <ul class="text-white">
                 <li class="h2 list-group-item">
                   <img
@@ -370,7 +370,7 @@
                 <li class="list-group-item fs-4 ms-2 my-3">Selenium</li>
               </ul>
             </div>
-            <div class="col">
+            <div class="col-md col-12 mb-5">
               <ul class="text-white">
                 <li class="h2 list-group-item">
                   <img
@@ -391,14 +391,14 @@
         </div>
       </section>
       <section id="contact">
-        <div class="row align-items-center p-5 m-5">
-          <div class="col-4">
-            <p class="h3 p-5">
+        <div class="row align-items-center p-md-5 m-md-5">
+          <div class="col-md-4 col-12">
+            <h3 class="h3 p-5">
               I'm always interested in hearing about new projects, so if you'd
               like to chat please get in touch.
-            </p>
+            </h3>
           </div>
-          <div class="col-8">
+          <div class="col-md-8 col-12 px-5 mb-3">
             <form action="https://formspree.io/f/moqbvoyj" method="post">
               <div class="mb-3">
                 <label for="name" class="form-label d-none">Name</label>
@@ -431,7 +431,7 @@
                   placeholder="Your message"
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-warning text-white">
+              <button type="submit" class="btn btn-warning text-white d-block mx-auto d-md-inline">
                 Get in Touch
               </button>
             </form>
