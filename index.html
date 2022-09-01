@@ -14,41 +14,60 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-dark text-white bg-secondary fixed-top"
+      class="navbar navbar-dark text-white bg-secondary fixed-top navbar-expand-md"
       id="navbar"
     >
       <div class="container-lg">
         <div class="nav-logo align-center">
           <a class="navbar-brand" href="#">John Doe </a>
         </div>
-        <div class="nav-links align-center">
-          <ul class="d-flex align-center nav nav-pills ">
-            <li class="nav-item list-group-item mx-3 d-flex text-white">
-              <a class="nav-link text-white" aria-current="page" href="#portfolio"
-                >Portfolio</a
-              >
-            </li>
-            <li class="nav-item list-group-item mx-3">
-              <a class="nav-link text-white" href="#about">About</a>
-            </li>
-            <li class="nav-item list-group-item mx-3">
-              <a class="nav-link text-white" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item list-group-item mx-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-envelope"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
-                />
-              </svg>
-            </li>
-          </ul>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <div class="nav-links align-center">
+            <ul class="d-flex align-center nav nav-pills">
+              <li class="nav-item list-group-item mx-3 d-flex text-white">
+                <a
+                  class="nav-link text-white"
+                  aria-current="page"
+                  href="#portfolio"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-item list-group-item mx-3">
+                <a class="nav-link text-white" href="#about">About</a>
+              </li>
+              <li class="nav-item list-group-item mx-3">
+                <a class="nav-link text-white" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item list-group-item mx-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-envelope mt-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -62,7 +81,7 @@
       <section class="hero" id="portfolio">
         <div class="container-fluid bg-dark">
           <div class="row align-items-center">
-            <div class="col-2">
+            <div class="col-md-2 d-none d-md-block">
               <div class="d-flex flex-column ps-3">
                 <a class="m-2" href="#"
                   ><img src="./img/github.png" alt="Github icon" width="25" />
@@ -89,7 +108,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-12  py-5 mt-5">
               <h1 class="text-warning display-3 fw-bold">
                 Hey There.<br />I'm Alex
               </h1>
@@ -100,7 +119,7 @@
                 have a project you need coded, don't hestiate to contact me.
               </p>
             </div>
-            <div class="col-4">
+            <div class="col-md-4 d-none d-md-block">
               <img
                 class="img-fluid"
                 src="./img/Illustration-header.png"
